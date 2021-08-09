@@ -43,4 +43,4 @@ if __name__ == '__main__':
         img,  aus_resize = read_img_path(test_path, opt.load_size)
         aus_tensor = model(img.to(device))
         aus_img = tensor_to_img(aus_tensor)
-        save_image(aus_img, aus_path, aus_resize)
+        save_image(aus_img, aus_path)
